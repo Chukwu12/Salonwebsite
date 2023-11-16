@@ -59,6 +59,15 @@ video{
     object-fit: cover;
 }
 
+.btn{
+  padding: 16px 36px;
+  transition:  all 0.4s ease;
+}
+
+.btn-brand{
+  background-color: transparent;
+  color: pink;
+}
 
 
 
