@@ -75,6 +75,15 @@ video{
   color: pink;
 }
 
+.home-container{
+  display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 400px;
+    position: relative;
+    z-index: 1;
+    justify-content: space-evenly;
+}
 
 
 
