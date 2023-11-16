@@ -56,7 +56,10 @@ nav{
 
 
 /* ---------------------Home page------------------------- */
-
+#home-page{
+  position: relative;
+    height: 100vh;
+}
 video{
   position: absolute;
     left: 0;
