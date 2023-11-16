@@ -26,11 +26,41 @@ html{
 
 
 /*-------Navigation------*/
+.container-fluid{
+  height: 50px;
+}
+
 .navbar-nav{
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
+
+.nav-link{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+
+/* ---------------------Home page------------------------- */
+
+.video-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*------------------Contact-page------------*/
 #team {
