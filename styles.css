@@ -36,7 +36,7 @@ html{
   justify-content: space-around;
 }
 
-.nav-link a{
+.navbar-nav a{
   font-size: 1.5rem;
   text-transform: uppercase;
 }
