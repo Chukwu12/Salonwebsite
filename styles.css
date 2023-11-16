@@ -41,6 +41,12 @@ html{
 .navbar-nav a{
   font-size: 1.5rem;
   text-transform: uppercase;
+  color: #363062;
+}
+
+.navbar-nav a:hover{
+  color: #F875AA;
+  transition:  all 0.4s ease;
 }
 
 nav{
