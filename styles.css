@@ -80,12 +80,14 @@ video{
 }
 
 .home-container{
-  display: flex;
+  position: relative;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
     z-index: 1;
-    justify-content: space-evenly;
 }
 
 .home-container h1 {
