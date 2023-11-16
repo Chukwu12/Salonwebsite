@@ -100,8 +100,10 @@ video{
 }
 
 
-
-
+/* ----------------Product- page------------------------- */
+.carousel-inner {
+  height: 800px;
+}
 
 
 
