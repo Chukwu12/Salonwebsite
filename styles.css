@@ -67,7 +67,7 @@ video{
 }
 
 .btn{
-  padding: 16px 36px;
+  padding: 16px;
   transition:  all 0.4s ease;
 }
 
@@ -345,35 +345,9 @@ img-box ul,
   border-radius: 50%;
 }
 
-.btn {
-  width: 150px;
-  background-color: #4481eb;
-  border: none;
-  outline: none;
-  height: 49px;
-  border-radius: 49px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 10px 0;
-  cursor: pointer;
-  transition: 0.5s;
-}
 
-.btn.transparent {
-  margin: 0;
-  background: none;
-  border: 3px solid rgba(228, 219, 189, 0.596);
-  width: 130px;
-  height: 41px;
-  font-weight: 600;
-  font-size: 15px;
-  color: #fff;
-}
 
-.btn:hover {
-  background-color: #bcdace;
-}
+
 
 .search-form {
   position: absolute;
