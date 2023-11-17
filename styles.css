@@ -133,7 +133,7 @@ home-span{
   text-transform: uppercase;
 }
 
-page-content{
+.page-content{
   display: flex;
   flex-direction: column;
   align-items: center;
