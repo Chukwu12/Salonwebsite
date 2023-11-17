@@ -78,15 +78,35 @@ video{
   border-radius: 25px ;
   font-weight: bold;
   border: 2px solid #fff0f5;
-  background: transparent;
-  color: white;
-  cursor: pointer;
-}
-
-.btn-brand{
   background-color: transparent;
   color: pink;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
+
+home-span{
+  background: pink;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-btn:hover span {
+  width: 100%;
+}
+
+.home-btn:hover{
+  border: none;
+}
+
+
+
 
 .home-container{
   position: relative;
@@ -112,6 +132,7 @@ video{
   text-align: center;
   text-transform: uppercase;
 }
+
 
 
 /* ----------------Product- page------------------------- */
