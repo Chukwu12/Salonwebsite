@@ -71,19 +71,7 @@ html{
   color: #555;
 }
 
-h1 {
-  text-align: center;
-  color: #555 !important;
-  padding-bottom: 10px;
-}
-h1::after {
-  content: "";
-  background: green;
-  display: block;
-  height: 3px;
-  width: 170px;
-  margin: 20px auto 5px;
-}
+
 
 .profile-pic {
   margin-top: 25px;
