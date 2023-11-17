@@ -85,7 +85,7 @@ video{
   overflow: hidden;
 }
 
-home-span{
+.home-span{
   background: pink;
   height: 100%;
   width: 0;
