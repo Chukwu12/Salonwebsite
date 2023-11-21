@@ -161,6 +161,13 @@ object-fit: cover;
 width: 100%;
 }
 
+.service-container{
+  height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
 
 
 
