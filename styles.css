@@ -148,7 +148,7 @@ video{
 
 /* ----------------Product- page------------------------- */
 .carousel-inner {
-  height: 800px;
+  height: 500px;
 }
 
 .c-item{
@@ -158,6 +158,7 @@ height: 500px;
 .c-img{
 height: 100%;
 object-fit: cover;
+width: 100%;
 }
 
 
