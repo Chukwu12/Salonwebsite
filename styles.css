@@ -168,7 +168,9 @@ width: 100%;
     margin: 10px 10px;
 }
 
-
+.service-img{
+  height: 100px;
+}
 
 
 /*------------------Contact-page------------*/
