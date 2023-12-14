@@ -170,15 +170,33 @@ width: 100%;
     width: 100%;
 }
 
+.service-container h2{
+  font-size: 4rem;
+    font-weight: 400;
+    font-family: fantasy;
+}
 
 .service-container .col {
   text-align: center;
 }
 
+
+
 .service-img{
   height: 100px;
+  margin-bottom: 30px;
 }
 
+.service-description{
+  display: flex;
+    flex-direction: column;
+}
+
+.service-description p {
+  font-size: 1.3rem;
+    font-weight: 400;
+    font-family: system-ui;
+}
 
 /*------------------Contact-page------------*/
 #team {
