@@ -162,18 +162,17 @@ width: 100%;
 }
 
 .service-container{
-  height: 300px;
     display: flex;
     flex-direction: column;
     margin: 10px 10px;
-    justify-content: flex-start;
-    width: 100%;
+    
 }
 
 .service-container h2{
   font-size: 4rem;
     font-weight: 400;
     font-family: fantasy;
+    margin-top: 30px;
 }
 
 .service-container .col {
@@ -190,6 +189,7 @@ width: 100%;
 .service-description{
   display: flex;
     flex-direction: column;
+    padding: 0px 20px;
 }
 
 .service-description p {
