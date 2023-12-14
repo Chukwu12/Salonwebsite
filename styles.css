@@ -170,6 +170,11 @@ width: 100%;
     width: 100%;
 }
 
+
+.service-container col {
+  text-align: center;
+}
+
 .service-img{
   height: 100px;
 }
