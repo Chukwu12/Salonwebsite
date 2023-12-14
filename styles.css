@@ -522,24 +522,8 @@ img-box ul,
 h2 {
   text-align: center;
 }
-.title-box {
-  background: orange;
-  color: #fff;
-  width: 180px;
-  padding: 4px 10px;
-  height: 40px;
-  margin-top: 30px;
-  display: flex;
-  text-align: center;
-  border-radius: 10%;
-}
 
-.title-box h2 {
-  font-size: 12px;
-  text-align: center;
-  text-decoration: uppercase;
-  padding: 10px;
-}
+
 
 
 .website-features {
