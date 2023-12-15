@@ -177,6 +177,10 @@ width: 100%;
 
 .service-container .col {
   text-align: center;
+    background: whitesmoke;
+    height: 300px;
+    margin: 0px 10px;
+    border-radius: 5px;
 }
 
 
