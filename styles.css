@@ -172,7 +172,7 @@ width: 100%;
   font-size: 4rem;
     font-weight: 400;
     font-family: fantasy;
-    margin-top: 30px;
+    margin: 30px 0px;
 }
 
 .service-container .col {
@@ -327,6 +327,11 @@ label {
  aspect-ratio(1,1);
 } */
 
+
+#hair{
+  margin: 20px;
+    margin-top: 200px;
+}
 .hairstyle-container{
   position: relative;
   height:600px;
