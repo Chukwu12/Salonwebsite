@@ -441,7 +441,9 @@ label {
   background-color: #bac383;
 }
 
-
+.content .des{
+  font-size: 2rem;
+}
 
 /*------------------Contact-page------------*/
 #team {
