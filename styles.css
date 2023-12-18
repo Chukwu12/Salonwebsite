@@ -176,7 +176,7 @@ height: 500px;
     margin: 30px 0px;
 }
 
-.service-container col {
+.service-container .col-md-3 {
     background: #fff0f5;
     border-radius: 5px;
     border: 1px solid black;
