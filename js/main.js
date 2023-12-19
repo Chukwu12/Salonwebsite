@@ -7,13 +7,13 @@ document.getElementById('prev').onclick = function(){
     document.getElementById('slide').prepend(lists[lists.length - 1]);
 }
 
-// var docWidth = document.documentElement.offsetWidth;
+var docWidth = document.documentElement.offsetWidth;
 
-// [].forEach.call(
-//   document.querySelectorAll('*'),
-//   function(el) {
-//     if (el.offsetWidth > docWidth) {
-//       console.log(el);
-//     }
-//   }
-// );
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
