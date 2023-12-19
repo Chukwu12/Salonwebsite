@@ -9,9 +9,9 @@
   margin: 0;
   padding: 0;
 }
-* {
+/* * {
   outline: solid 1px red;
-}
+} */
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -928,7 +928,7 @@ ul {
 }
 
 
-/* Media Query */
+/* Media */
 /* CSS for desktop view */
 .hairstyle-container {
   display: flex;
