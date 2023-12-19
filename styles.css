@@ -240,6 +240,25 @@ height: 500px;
   text-align: center; /* Aligns the text content at the center */
 }
 
+#services h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333; /* Change the color as needed */
+  position: relative;
+}
+
+#services h2::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #ff6b6b; /* Change to your desired color */
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Container Styles */
 #services {
   background-color: #f9f9f9;
