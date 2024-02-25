@@ -263,6 +263,8 @@ height: 500px;
 #services {
   background-color: #f9f9f9;
   padding: 50px 0;
+  margin-top: 100px;
+
 }
 
 .container {
@@ -279,7 +281,7 @@ h2.text-center {
 /*---------------- hairstlye */
 #hair{
     margin: 150px 0px;
-    height: 100vh;
+    
 }
 .hairstyle-container{
   position: relative;
@@ -291,6 +293,13 @@ h2.text-center {
 #slide{
   width:max-content;
   margin-top:50px;
+}
+
+.item{
+  width: calc(100% / 3); /* Adjust according to your desired layout */
+  float: left;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 .item{
@@ -964,3 +973,16 @@ ul {
     /* Full width for one column */
   }
 }
+
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .item {
+      width: calc(100% / 2);
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .item {
+      width: 100%;
+    }
+  }
