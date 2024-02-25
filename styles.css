@@ -292,6 +292,13 @@ h2.text-center {
   width:max-content;
   margin-top:50px;
 }
+
+.items{
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .item{
   width:200px;
   height:300px;
