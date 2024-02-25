@@ -342,8 +342,10 @@ h2.text-center {
   font-family: system-ui;
 }
 .item:nth-child(2) .content{
-  display: block;
+  display: flex;
   z-index: 11111;
+  justify-content: center;
+  flex-direction: column;
 }
 .item .name{
   font-size: 40px;
@@ -359,6 +361,7 @@ h2.text-center {
 .item button{
   padding:10px 20px;
   border:none;
+  width: 100px;
   opacity: 0;
   animation:showcontent 1s ease-in-out 0.6s 1 forwards
 }
