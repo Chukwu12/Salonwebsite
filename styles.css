@@ -278,12 +278,12 @@ h2.text-center {
 
 /*---------------- hairstlye */
 #hair{
-    margin: 200px 0px;
-    height: 70vh;
+    margin: 150px 0px;
+    height: 100vh;
 }
 .hairstyle-container{
   position: relative;
-  height: 600px;
+  height: 800px;
   padding:50px;
   background-color: #f5f5f5;
   box-shadow: 0 30px 50px #dbdbdb;
@@ -293,20 +293,17 @@ h2.text-center {
   margin-top:50px;
 }
 
-.items{
-  background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .item{
   width:200px;
   height:300px;
   background-position: 50% 50%;
   display: inline-block;
   transition: 0.5s;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
+  object-fit:cover ;
   z-index: 1;
   top:50%;
   transform: translate(0,-50%);
@@ -941,7 +938,7 @@ ul {
 /* Media */
 /* CSS for desktop view */
 .hairstyle-container {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   justify-content: space-between;
 }
