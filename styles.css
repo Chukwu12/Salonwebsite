@@ -478,6 +478,7 @@ font-weight: 400;
   font-size: 2rem;
 }
 
+
 /*------------------Contact-page------------*/
 #team {
   padding-top: 50px;
@@ -894,7 +895,57 @@ h2 {
 }
 
 
+/*----------------- appointment form ------------- */
+.form-container{
+  background-color: #fafafa;
+  margin: 200px;
+  height: 600px;
+  box-shadow: rgba(0, 0, 0, .1);
+  display: grid;
+  grid-template-columns: 50% 50%;
+ 
+}
 
+.form-img{
+  background-image: url('img/4Amour-Hair-Price-List-v1-3.png');
+  background-size: cover;
+  background-position: center;
+ border: 3px dashed gold;
+ text-align: center;
+}
+
+
+.heading{
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-container form {
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #000;
+}
+
+form {
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+.form-field {
+  
+}
+
+.form p {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+input,select{
+  pad: 10px 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 /*------------------------------Product footer---------------------*/
 .footer {
