@@ -290,6 +290,8 @@ h2.text-center {
   gap: 40px;
 }
 
+
+
 .hero-container img{
   width: 100%;
   height: auto;
@@ -340,7 +342,39 @@ font-weight: 400;
   cursor: pointer;
 }
 
+/* Define the animation */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
+/* Apply the animation to the image */
+.slide-down-animation {
+  animation: slideDown 2s ease forwards;
+}
+
+/* Define the animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the image */
+.slide-left-animation {
+  animation: slideLeft 1s ease forwards;
+}
 
 
 
