@@ -348,44 +348,48 @@ font-weight: 400;
 
 
 #hair{
-    margin: 150px 0px;
+    margin: 50px 0px;
     
 }
 .hairstyle-container{
   position: relative;
-  height: 800px;
-  padding:50px;
+  padding: 20px 0;
+  padding:10px;
   background-color: #f5f5f5;
   box-shadow: 0 30px 50px #dbdbdb;
+ 
 }
 #slide{
   width:max-content;
   margin-top:50px;
 }
 
-.item{
-  width: calc(100% / 8); /* Adjust according to your desired layout */
-  float: left;
-  box-sizing: border-box;
-  padding: 10px;
+.slide-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  padding: 0 15px;
+  height: 800px;
 }
 
 .item{
-  /* width:200px; */
-  height:300px;
+  width: calc(100% / 8); /* Adjust width to fit 2 items per row with spacing */
+  margin-bottom: 20px; /* Add spacing between rows */
+  box-sizing: border-box;
+  padding: 10px;
+  height:250px;
   background-position: 50% 50%;
-  display: inline-block;
   transition: 0.5s;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 25px;
   position: absolute;
   object-fit:cover ;
-  z-index: 1;
   top:50%;
   transform: translate(0,-50%);
   border-radius: 20px;
-  box-shadow:  0 30px 50px #505050;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .item:nth-child(1),
 .item:nth-child(2){
@@ -398,17 +402,22 @@ font-weight: 400;
   box-shadow: none;
 }
 .item:nth-child(3){
-  left:50%;
+  left:40%;
 }
 .item:nth-child(4){
-  left:calc(50% + 220px);
+  left:calc(40% + 250px);
 }
 .item:nth-child(5){
-  left:calc(50% + 440px);
+  left:calc(40% + 500px);
 }
-.item:nth-child(n+6){
-  left:calc(50% + 660px);
+
+.item:nth-child(n+6) {
   opacity: 0;
+  pointer-events: none; /* Disable pointer events for hidden items */
+  position: absolute; /* Position items absolutely */
+  top: 40%; /* Align items to the top */
+  left: 100%; /* Position items outside the slide container */
+  transform: translateX(-100%); /* Move items back into the container */
 }
 .item .content{
   position: absolute;
@@ -417,7 +426,9 @@ font-weight: 400;
   width:300px;
   text-align: left;
   padding:0;
-  color:#eee;
+  color: black;
+  font-weight: 600;
+  font-size: 3rem;
   transform: translate(0,-50%);
   display: none;
   font-family: system-ui;
@@ -478,6 +489,12 @@ font-weight: 400;
   font-size: 2rem;
 }
 
+
+@media screen and (max-width: 480px) {
+  .item {
+      width: 100%; /* On even smaller screens, show 1 item per row */
+  }
+}
 
 /*------------------Contact-page------------*/
 #team {
@@ -1065,17 +1082,13 @@ ul {
 
 /* Media */
 /* CSS for desktop view */
-.hairstyle-container {
-  /* display: flex; */
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-.item {
+
+
   /* width: calc(33.333% - 20px); */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* Adjust spacing or width as needed */
-}
+
 
 /* Media query for tablet view */
 @media screen and (max-width: 768px) {
