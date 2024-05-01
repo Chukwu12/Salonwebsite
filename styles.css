@@ -288,6 +288,7 @@ h2.text-center {
   flex-direction: row-reverse;
   justify-content: space-between;
   gap: 40px;
+  height: 100vh;
 }
 
 
@@ -404,7 +405,7 @@ font-weight: 400;
   flex-wrap: wrap;
   justify-content: center; /* Center items horizontally */
   padding: 0 15px;
-  height: 800px;
+  height: 700px;
 }
 
 .item{
@@ -438,12 +439,15 @@ font-weight: 400;
 }
 .item:nth-child(3){
   left:40%;
+  top: 70%;
 }
 .item:nth-child(4){
   left:calc(40% + 250px);
+  top: 70%;
 }
 .item:nth-child(5){
   left:calc(40% + 500px);
+  top: 70%;
 }
 
 .item:nth-child(n+6) {
@@ -507,8 +511,11 @@ font-weight: 400;
   position: relative;
   z-index: 222222;
   text-align: center;
-  width: 90%;
-  top: 80%;
+  width: 100%;
+  display: flex;
+    justify-content: center;
+    gap: 40px;
+
 }
 .buttons button{
   width:50px;
