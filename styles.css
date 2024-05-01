@@ -304,6 +304,7 @@ h2.text-center {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: slideFromLeft 1s ease forwards;
 }
 
 .hero-text h2{
@@ -373,7 +374,7 @@ font-weight: 400;
 
 /* Apply the animation to the image */
 .slide-left-animation {
-  animation: slideLeft 1s ease forwards;
+  animation: slideLeft 1.5s ease forwards;
 }
 
 
