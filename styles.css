@@ -281,6 +281,10 @@ h2.text-center {
 /*---------------- hairstlye */
 
 .hero-container{
+  background-image: url('');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 600px;
   padding: 20px;
   margin: 40px 0px 40px 0px;
@@ -380,83 +384,83 @@ font-weight: 400;
 
 
 
-
-
+#hair h2{
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
 
 #hair{
     margin: 50px 0px;
     
 }
 .hairstyle-container{
-  position: relative;
-  padding: 20px 0;
-  padding:10px;
-  background-color: #f5f5f5;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
   box-shadow: 0 30px 50px #dbdbdb;
  
 }
 #slide{
-  width:max-content;
   margin-top:50px;
 }
 
-.slide-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center items horizontally */
-  padding: 0 15px;
-  height: 700px;
+.slider-container {
+position: absolute;
+inset: 80px 200px 80px 80px;
+background-color: #000;
 }
 
-.item{
-  width: calc(100% / 8); /* Adjust width to fit 2 items per row with spacing */
-  margin-bottom: 20px; /* Add spacing between rows */
-  box-sizing: border-box;
-  padding: 10px;
+.slider-container .item{
+ position: absolute;
+  top: 50%;
   height:250px;
-  background-position: 50% 50%;
-  transition: 0.5s;
+  width: 250px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 25px;
-  position: absolute;
   object-fit:cover ;
-  top:50%;
-  transform: translate(0,-50%);
+  transition: 0.5s;
+  transform: translateY(-50%);
   border-radius: 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .item:nth-child(1),
 .item:nth-child(2){
+  position: absolute;
   left:0;
   top:0;
-  transform: translate(0,0);
-  border-radius: 0;
-  width:100%;
-  height:100%;
-  box-shadow: none;
+  transform: translateY(0);
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0);
+  background-size: cover;
 }
 .item:nth-child(3){
-  left:40%;
-  top: 70%;
+  left: calc(50% + 240px);
+  background-size: cover;
 }
 .item:nth-child(4){
-  left:calc(40% + 250px);
-  top: 70%;
+  left:calc(50% + 500px);
+  background-size: cover;
 }
 .item:nth-child(5){
-  left:calc(40% + 500px);
-  top: 70%;
+  left:calc(50% + 760px);
+  background-size: cover;
 }
 
-.item:nth-child(n+6) {
-  opacity: 0;
-  pointer-events: none; /* Disable pointer events for hidden items */
-  position: absolute; /* Position items absolutely */
-  top: 40%; /* Align items to the top */
-  left: 100%; /* Position items outside the slide container */
-  transform: translateX(-100%); /* Move items back into the container */
+.item:nth-child(6) {
+left: calc(50% + 1020px);
+background-size: cover;
+opacity: 0;
 }
 .item .content{
   position: absolute;
@@ -508,14 +512,22 @@ font-weight: 400;
   }
 }
 .buttons{
-  position: relative;
-  z-index: 222222;
-  text-align: center;
-  width: 100%;
+  position: absolute;
+  bottom: 15px;
   display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 
+}
+
+.buttons span {
+  width: 50px;
+  height: 50px ;
+  background: #111;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .buttons button{
   width:50px;
