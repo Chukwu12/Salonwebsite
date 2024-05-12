@@ -384,17 +384,11 @@ font-weight: 400;
 
 
 
-/* #hair h2{
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: #333333;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 2.5rem;
-  text-align: center;
+ #hair {
+ height: 100vh;
   
   
-} */
+} 
 
 .hairstyle-container{
   position: absolute;
@@ -468,7 +462,7 @@ opacity: 0;
 
 @media (min-width: 1024px) { 
   .item{
-    top: 80%;
+    top: 70%;
     left: 10%;
     width: 200px;
     height: 200px;
@@ -485,6 +479,25 @@ opacity: 0;
     .item:nth-child(5) {
       left: calc(10% + 850px);
     }  
+ }
+
+ @media (min-width: 900px) and (max-width: 1023px) {
+  .item{
+    top: 70%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    }
+
+    .item:nth-child(3) {
+      left: calc(15% + 295px);
+    }
+    .item:nth-child(4) {
+      left: calc(15%);
+    
+    }
+
+
  }
 
  @media (max-width: 768px) {
@@ -528,7 +541,7 @@ overflow: hidden; /* or overflow: auto; */
 }
 
  .item{
-top: 80%;
+top: 70%;
 left: 10%;
 width: 150px;
 height: 150px;
@@ -552,7 +565,7 @@ bottom: 0px;
 }
 .item .content{
   position: absolute;
-  top:50%;
+  top:30%;
   left:100px;
   width:300px;
   text-align: left;
@@ -601,7 +614,7 @@ bottom: 0px;
 }
 .buttons{
   position: absolute;
-  bottom: 7%;
+  bottom: 10%;
   display: flex;
     justify-content: center;
     gap: 20px;
@@ -1143,10 +1156,48 @@ input,select{
 
 
 /*--------------------footer-----------------------*/
-.footer-container{
-  
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
 }
 
+.footer-container {
+  position: fixed; /* or position: absolute; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in w
+}
+
+.social-content,
+.footer-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+h2,
+h3 {
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff; /* Add your social media icons or styling */
+  margin-right: 10px;
+}
+
+.credit {
+  text-align: right;
+}
 
 
 
