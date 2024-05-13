@@ -31,7 +31,7 @@ html{
 
 /*-------Navigation------*/
 .container-fluid{
-  height: 50px;
+  height: auto;
 }
 
 .navbar-nav{
@@ -279,18 +279,19 @@ h2.text-center {
 }
 
 /*---------------- hairstlye */
+#hero{
+  height: 50vh;
+}
 
 .hero-container{
   background-image: url('');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
-  padding: 20px;
-  margin: 40px 0px 40px 0px;
+  height: 50vh;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
   
 }
@@ -298,7 +299,7 @@ h2.text-center {
 
 
 .hero-container img{
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
 }
@@ -377,6 +378,42 @@ font-weight: 400;
   }
 }
 
+@media (max-width:900px) {
+  .hero-container{
+    flex-wrap: wrap;
+    
+  }
+  #hero{
+    height: 60vh;
+  }
+}
+
+ /* Responsive styles
+ @media screen and (max-width: 768px) {
+  .hero-text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    width: 90%;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-text button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+} */
+
 /* Apply the animation to the image */
 .slide-left-animation {
   animation: slideLeft 1.5s ease forwards;
@@ -385,20 +422,19 @@ font-weight: 400;
 
 
  #hair {
- height: 100vh;
+ height: 90vh;
   
   
 } 
 
 .hairstyle-container{
   position: absolute;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
  display: flex;
  justify-content: center;
  align-items: center;
-  box-shadow: 0 30px 50px #dbdbdb;
-  background: radial-gradient(rgba(233, 23, 180, 0.397), transparent);
+background: radial-gradient(rgba(233, 23, 180, 0.397), transparent);
  
 }
 #slide{
@@ -1157,25 +1193,37 @@ input,select{
 
 /*--------------------footer-----------------------*/
 #footer {
-  background-color: #333;
-  color: #fff;
-  padding: 50px 0;
+  display: flex;
+    margin: 10px auto;
+    height: 100px;
+    
 }
 
 .footer-container {
-  position: fixed; /* or position: absolute; */
-  bottom: 0;
-  left: 0;
   width: 100%;
-  background-color: #fafafa;
-  padding: 20px;
-  box-sizing: border-box; /* Ensure padding is included in w
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff0f5;
+    padding: 0px 15px;
 }
+
+.social-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+
 
 .social-content,
 .footer-content {
-  flex: 1;
-  margin-right: 20px;
+  flex-direction: column;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
 }
 
 h2,
@@ -1185,6 +1233,15 @@ h3 {
 
 .socials {
   display: flex;
+  gap: 20px;
+}
+
+.socials i {
+  font-size: 20px;
+}
+
+.footer-content span {
+  font-size: 15px;
 }
 
 .socials a {
@@ -1193,6 +1250,23 @@ h3 {
   height: 30px;
   background-color: #fff; /* Add your social media icons or styling */
   margin-right: 10px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: .75rem;
+}
+
+.footer__copy, .footer__privacy {
+  font-size: var(--smaller-font-size);
+  color: hsl(220, 4%, 55%);
+}
+
+.footer__privacy {
+  color: #fa4eab;
+  text-decoration: underline;
 }
 
 .credit {
@@ -1226,7 +1300,128 @@ ul {
 }
 
 
-/* Media */
-/* CSS for desktop view */
+/* Terms & conditon */
+#terms{
+  background-image:url("img/pexels-ann-poan-5797903.jpg");
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.terms-box{
+  max-width: 460px;
+  background-color: #111;
+  color: white;
+  font-family: var(--second-font);
+  padding: 60px 30px;
+}
+
+.term-text{
+  padding: 0 20px;
+  height: 400px;
+  overflow-y: auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.term-text::--webkit-scrollbar{
+  width: 2px;
+  background-color: #282828;
+}
+
+.term-text::--webkit-scrollbar-thumb{
+  background-color: #d13639;
+}
+
+.term-text h2 {
+  text-transform: uppercase;
+  color: wheat;
+}
+
+.terms-box h4 {
+  font-size: 13px;
+  text-align: center;
+  padding: 0 40px;
+}
+
+
+
+/* Layers End */
+
+.wrapper {
+  width: 400px;
+  height: 200px;
+  display: table;
+  border: 5px solid #111;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative;
+}
+
+.wrapper:after,
+.wrapper:before {
+  content: '';
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: 50px;
+  color: #111;
+  background: #fff;
+}
+
+.wrapper:after {
+  content: '\f10d';
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 0 #fff;
+}
+
+.wrapper:before {
+  content: '\f10e';
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  box-shadow: -10px -10px 0 #fff;
+}
+
+.title,
+.description {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 20px 0 0;
+}
+
+.title small {
+  display: block;
+  font-size: 25px;
+  text-align: right;
+}
+
+.border-radius {
+  border-radius: 30px;
+}
+
+.text-right {
+  text-align: right;
+}
 
 
