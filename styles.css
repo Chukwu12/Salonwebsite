@@ -704,123 +704,6 @@ bottom: 0px;
       font-size: 2rem;
     }
   }
-/*------------------Contact-page------------*/
-#team {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: #555;
-}
-
-
-
-
-.profile-pic {
-  margin-top: 25px;
-}
-
-.profile-pic .img-box {
-  opacity: 1px;
-  display: block;
-  position: relative;
-}
-
-.profile-pic {
-  margin-top: 25px;
-}
-
-.profile-pic .img-box {
-  opacity: 1;
-  display: block;
-  position: relative;
-}
-
-.profile-pic .img-box img {
-  filter: grayscale(1);
-}
-
-.profile-pic .img-box img:hover {
-  filter: grayscale(0);
-  cursor: pointer;
-}
-
-.profile-pic h2 {
-  font-size: 22px;
-  font-weight: bold;
-  margin-top: 15px;
-  color: green !important;
-}
-
-.profile-pic h3 {
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-#team .fa {
-  height: 25px;
-  width: 25px;
-  color: #007bff !important;
-  background: #fff;
-  padding: 4px;
-  border-radius: 50%;
-}
-
-.img-box ul {
-  padding: 15px 0;
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-}
-
-.img-box ul li {
-  padding: 5px;
-  display: inline-block;
-}
-
-.img-box:hover ul {
-  opacity: 1;
-}
-img-box ul,
-.img-box ul {
-  transition: 0.5s;
-}
-
-/*-----------Get in touch--------------*/
-
-#contact {
-  background: #efefef;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  color: #777;
-}
-
-.contact-form {
-  padding: 30px;
-}
-
-.form-control {
-  border-radius: 0 !important;
-  border: none !important;
-}
-
-::placeholder {
-  color: #999 !important;
-}
-
-.follow {
-  background: #fff;
-  padding: 10px;
-  margin: 15px;
-}
-
-.contact-info .fa {
-  margin: 10px;
-  color: #4481eb;
-  font-weight: bold;
-}
 
 /*-----------------------video----------------*/
 .container-video {
@@ -1060,7 +943,7 @@ h2 {
 }
 
 /*-------------------------Coming Soon--------------------*/
-
+/* 
 
 .product-top img {
   width: 100%;
@@ -1117,7 +1000,7 @@ h2 {
 .product-bottom h5 {
   font-size: 15px;
   padding-bottom: 10px;
-}
+} */
 
 
 /*----------------- appointment form ------------- */
@@ -1195,7 +1078,7 @@ input,select{
 #footer {
   display: flex;
     margin: 10px auto;
-    height: 100px;
+    height: 20vh;
     
 }
 
@@ -1299,6 +1182,89 @@ ul {
   width: 28px;
 }
 
+/*------------------Contact-page------------*/
+/* contact form */
+.contact-hero{
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.8)), url(img/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.contact-hero h2{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.contact-hero h3{
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0; 
+  letter-spacing: 4px; 
+}
+
+.contact-hero .text{
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: 1.5rem;
+  max-width: 500px;
+  margin: 1.6rem 0;
+}
+
+.contact-info{
+  margin: 2rem 0; 
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contact-info span{
+  display: block;
+}
+
+.contact-info span{
+  display: block;
+}
+
+.contact-info div{
+  margin: 0.8rem 0;
+  padding: 1rem;
+}
+
+.contact-info > div > span > i {
+  font-size: 2rem;
+  padding-bottom: 0.9rem;
+  color: #f2327a;
+}
+
+.contact-info .text{
+padding-top: 0.4rem;
+}
+
+.contact-form{
+  padding: 2rem 0;
+  border-top: 1px solid white;
+}
+
+.contact-form form {
+  padding-bottom: 1rem;
+}
+
+.form-control{
+  width: 100%;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 0.6rem 0;
+  font-size: 1rem;
+  outline: 0;
+}
 
 /* Terms & conditon */
 #terms{
