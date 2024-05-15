@@ -3,20 +3,26 @@
 /* CSS
 /*******************************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 /* Box Model Hack */
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-/* * {
-  outline: solid 1px red;
-} */
+
 /******************************************
 /* LAYOUT
 /*******************************************/
 html{
   font-size: 62.5%;
+}
+
+body{
+  font-family: 'Space Mono', monospace;
 }
 
 
@@ -41,7 +47,7 @@ html{
 }
 
 .navbar-nav a{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   color: #363062;
   font-weight: 500;
@@ -317,6 +323,7 @@ h2.text-center {
   font-size: 3.3rem;
   margin-bottom: 8px;
   color: #44498B;
+  text-transform: uppercase;
 }
 
 .hero-text p {
@@ -423,6 +430,8 @@ font-weight: 400;
 
  #hair {
  height: 90vh;
+ display: flex;
+ justify-content: center;
   
   
 } 
@@ -430,7 +439,7 @@ font-weight: 400;
 .hairstyle-container{
   position: absolute;
   height: 90vh;
-  width: 100vw;
+  width: 90vw;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -443,8 +452,8 @@ background: radial-gradient(rgba(233, 23, 180, 0.397), transparent);
 
 .slider-container {
 position: absolute;
-inset: 60px 60px 60px 60px;
-overflow: hidden; /* or overflow: auto; */
+inset: 70px 70px 70px 70px;
+overflow: hidden; 
 
 }
 
@@ -499,21 +508,21 @@ opacity: 0;
 @media (min-width: 1024px) { 
   .item{
     top: 70%;
-    left: 10%;
+    left: 15%;
     width: 200px;
     height: 200px;
     }
 
     .item:nth-child(3) {
-      left: calc(10% + 285px);
+      left: calc(15% + 285px);
     }
 
     .item:nth-child(4) {
-      left: calc(10% + 580px);
+      left: calc(15% + 580px);
     }
 
     .item:nth-child(5) {
-      left: calc(10% + 850px);
+      left: calc(15% + 850px);
     }  
  }
 
@@ -1200,7 +1209,7 @@ ul {
 
 .contact-hero h2{
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 400
 }
 
 .contact-hero h3{
