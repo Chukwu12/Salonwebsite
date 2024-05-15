@@ -1,10 +1,24 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /******************************************
 /* CSS
 /*******************************************/
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* WebKit (Safari, Chrome) */
+::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scrollbar */
+  border-radius: 6px; /* roundness of the scrollbar */
+}
 
 
 /* Box Model Hack */
@@ -12,6 +26,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--primary-font);
 }
 
 /******************************************
@@ -21,13 +36,22 @@ html{
   font-size: 62.5%;
 }
 
-body{
-  font-family: 'Space Mono', monospace;
+h2{
+  font-family: var(--second-font);
 }
 
+:root {
+  --primary-font: 'Space Mono', monospace;
+  --secondary-font: 'Cormorant Garamond', serif;
+}
+
+.secondary-font {
+  font-family: var(--secondary-font);
+}
 
 /******************************************
 /* ADDITIONAL STYLES
+
 /*******************************************/
 /* colors */
 
@@ -38,6 +62,10 @@ body{
 /*-------Navigation------*/
 .container-fluid{
   height: auto;
+}
+
+.navbar-brand{
+  height: 80px;
 }
 
 .navbar-nav{
@@ -60,6 +88,10 @@ body{
 
 nav{
   z-index: 1;
+}
+
+.navbar-brand img {
+  max-width: 150px; /* Adjust the maximum width as needed */
 }
 
 
@@ -137,6 +169,7 @@ video{
   text-align: center;
   margin-bottom: 30px;
   text-transform: uppercase;
+  font-family: var(--secondary-font);
 }
 
 .home-container p {
@@ -144,6 +177,7 @@ video{
   color: white;
   text-align: center;
   text-transform: uppercase;
+  font-family: var(--secondary-font);
 }
 
 .page-content{
@@ -231,15 +265,19 @@ height: 500px;
   border-top-right-radius: 10px;
   max-width: 100%; /* Ensures the image doesn't overflow */
   height: auto; /* Allows the image to maintain its aspect ratio */
+  padding: 20px;
 }
 
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .card-text {
   color: #555;
+  font-size: 1.3rem;
 }
 
 .card-body {
@@ -289,6 +327,10 @@ h2.text-center {
   height: 50vh;
 }
 
+#hero > container > row > img{
+ padding: 20px;
+}
+
 .hero-container{
   background-image: url('');
   background-position: center;
@@ -324,6 +366,7 @@ h2.text-center {
   margin-bottom: 8px;
   color: #44498B;
   text-transform: uppercase;
+  font-family: var(--secondary-font);
 }
 
 .hero-text p {
@@ -688,19 +731,11 @@ bottom: 0px;
 .content .des{
   font-size: 3rem;
 }
-
-  
-
-
     .hero-text{
       width: 100%;
       text-align: center;
     }
 
-    .hero-text h2{
-      font-size: 3rem;
-    }
-  }
 
   @media (max-width: 678px){
     .hero-text h2{
@@ -1149,6 +1184,10 @@ h3 {
   flex-direction: column;
   align-items: center;
   row-gap: .75rem;
+}
+
+.footer__copy{
+  font-size: 1.5rem;
 }
 
 .footer__copy, .footer__privacy {
