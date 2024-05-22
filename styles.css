@@ -494,7 +494,7 @@ font-weight: 400;
  display: flex;
  justify-content: center;
  align-items: center;
-background: radial-gradient(rgba(233, 23, 180, 0.397), transparent);
+/* background: radial-gradient(rgba(233, 23, 180, 0.397), transparent); */
  
 }
 #slide{
