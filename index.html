@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Celebrityhairstyle</title>
-<!-- CSS -->
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="css/normalize.css">
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amour Hairstyle</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-
-   <!------Navigation Bar ------>
-   <nav class="navbar navbar-expand-sm" style="background-color: #fff0f5;">
+<body class="index-page">
+  <nav class="navbar navbar-expand-sm navbar-light modern-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img src="img/amour-hair.png" alt="Amour" width="auto" height="100">
@@ -31,33 +27,100 @@
     </div>
   </nav>
 
-
-
-<!-------------------Home page------------------------->
-<section id="home-page">
-    <video autoplay loop muted plays-inline>
-      <source src="img/pexels-cottonbro-7427944 (2160p).mp4" type="video/mp4" class="video-bg">
+  <section class="home-hero">
+    <video autoplay loop muted playsinline>
+      <source src="img/pexels-cottonbro-7427944 (2160p).mp4" type="video/mp4">
     </video>
+    <div class="home-hero-overlay"></div>
 
-    <div class="home-container">
-      <div class="row">
-        <div class="col">
-          <div class="page-content">
-            <h1 class="display-3"> Let your Hair do  the talking </h1>
-            <p>Our mission is to provide one of a kind service and promote confidence and self-worth</p>
-          
-            <a href="#form" class="home-btn btn-brand"><span class="home-span"></span>Book Appointment</a>
-        </div>
-        </div>
-          </div>
+    <div class="home-hero-content reveal-on-scroll">
+      <span class="home-kicker">Amour Hairstyle Studio</span>
+      <h1>Let Your Hair Do The Talking</h1>
+      <p>
+        Signature braids, modern cuts, premium color, and healthy-hair care in one welcoming salon experience.
+      </p>
+      <div class="home-hero-actions">
+        <a href="products.html#form" class="home-btn-primary">Book Appointment</a>
+        <a href="products.html" class="home-btn-secondary">View Services</a>
+      </div>
+      <div class="home-hero-tags">
+        <span>Protective Styling</span>
+        <span>Hair Treatment</span>
+        <span>Color + Extensions</span>
+      </div>
     </div>
-</section>
+  </section>
 
+  <section class="home-value reveal-on-scroll">
+    <div class="home-value-grid">
+      <article class="reveal-on-scroll">
+        <h2>Precision</h2>
+        <p>Every appointment starts with a consultation so your final look matches your face shape, texture, and lifestyle.</p>
+      </article>
+      <article class="reveal-on-scroll">
+        <h2>Care</h2>
+        <p>We use healthy-hair methods focused on scalp comfort, hydration, and long-lasting style retention.</p>
+      </article>
+      <article class="reveal-on-scroll">
+        <h2>Culture</h2>
+        <p>Our styling catalog celebrates traditional and modern looks for women, men, and kids across all hair types.</p>
+      </article>
+    </div>
+  </section>
 
+  <section class="home-featured">
+    <div class="home-featured-head reveal-on-scroll">
+      <span>Most Requested</span>
+      <h2>Popular Services</h2>
+    </div>
 
+    <div class="home-featured-grid">
+      <article class="reveal-on-scroll">
+        <i class="fa-solid fa-scissors"></i>
+        <h3>Cuts and Styling</h3>
+        <p>Women and men precision cuts, shape-ups, and finish styling.</p>
+      </article>
+      <article class="reveal-on-scroll">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <h3>Braids and Twists</h3>
+        <p>Knotless, box braids, twists, and custom pattern installs.</p>
+      </article>
+      <article class="reveal-on-scroll">
+        <i class="fa-solid fa-droplet"></i>
+        <h3>Repair and Hydration</h3>
+        <p>Scalp detox, steam treatments, and deep conditioning therapy.</p>
+      </article>
+    </div>
 
+    <div class="home-featured-cta reveal-on-scroll">
+      <a href="products.html">Explore Full Service Menu</a>
+    </div>
+  </section>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <section class="home-cta reveal-on-scroll">
+    <h2>Ready For Your Next Signature Look?</h2>
+    <p>Book your appointment today and let our team create a style that fits you perfectly.</p>
+    <a href="contact.html">Contact The Salon</a>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="social-content">
+        <h3>Find us here</h3>
+        <div class="socials">
+          <i class="fa-brands fa-facebook fa-beat"></i>
+          <i class="fa-brands fa-instagram fa-beat"></i>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <span class="footer__copy">OE Coders Corporation / Glofabs Enterprises</span>
+        <a class="footer__privacy" href="terms.html">Terms and conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
