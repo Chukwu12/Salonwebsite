@@ -88,6 +88,12 @@ npx serve .
 
 The site is deployed via Netlify with continuous deployment. Any pushes to the main branch trigger an automatic redeploy.
 
+## Contributing
+
+Use a feature branch and open a pull request to `master` for all new changes.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow and [pull request template](.github/pull_request_template.md).
+
 ## Client Information
 
 | | |
