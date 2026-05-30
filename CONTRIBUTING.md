@@ -51,3 +51,7 @@ git branch -d feat/short-description
 - Add screenshots for visual changes.
 - Verify links and responsive layout.
 - Update `README.md` when behavior or setup changes.
+
+## Branch Protection
+
+Recommended protection settings for `master` are documented in `.github/BRANCH_PROTECTION.md`.

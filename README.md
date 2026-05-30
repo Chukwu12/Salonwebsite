@@ -94,6 +94,8 @@ Use a feature branch and open a pull request to `master` for all new changes.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow and [pull request template](.github/pull_request_template.md).
 
+For protected-branch setup, see [branch protection guide](.github/BRANCH_PROTECTION.md).
+
 ## Client Information
 
 | | |
